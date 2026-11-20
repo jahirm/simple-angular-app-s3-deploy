@@ -2,7 +2,9 @@ name: simple angualar app s3 deploy
 on: push
 
 jobs:
+  deploy:
     runs-on: windows-latest
+    
     steps:
         - name: checkout on VM
           uses: actions/checkout@v4
