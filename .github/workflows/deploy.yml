@@ -4,7 +4,7 @@ on: push
 jobs:
   deploy:
     runs-on: windows-latest
-    
+
     steps:
         - name: checkout on VM
           uses: actions/checkout@v4
@@ -16,7 +16,7 @@ jobs:
             cache: npm
 
         - name: install dependency
-          run: npm run ci
+          run: npm ci
 
         - name: make build
           run: npm run build
